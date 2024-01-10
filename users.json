@@ -1,10 +1,10 @@
 {
     "admin": {
-        "name": "admin",
-        "email": "admin@localhost",
+        "id": "admin",
         "password": "admin",
-        "balance": "1000000",
+        "email": "admin@localhost.hu",
         "admin": true,
+        "balance": 1000000,
         "cards": []
     }
 }

@@ -97,7 +97,7 @@ interface IStorage {
      * @param $record T entry to insert
      * @return string id assigned to the inserted entry
      */
-    function add($record): string;
+    function add($record, $id): string;
 
     /**
      * Returns a given entry from the storage.
@@ -180,8 +180,8 @@ class Storage implements IStorage {
      * @param $record T entry to insert
      * @return string id assigned to the inserted entry
      */
-    public function add($record): string {
-        $id = uniqid();
+    public function add($record, $id): string {
+        //$id = uniqid();
         if (is_array($record)) {
             $record['id'] = $id;
         } elseif (is_object($record)) {
