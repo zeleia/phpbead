@@ -46,7 +46,7 @@
     "card4": {
         "id": "card4",
         "name": "Caterpie",
-        "type": "bug",
+        "type": "grass",
         "hp": 45,
         "attack": 30,
         "defense": 35,
@@ -57,7 +57,7 @@
     "card5": {
         "id": "card5",
         "name": "Weedle",
-        "type": "bug",
+        "type": "grass",
         "hp": 40,
         "attack": 35,
         "defense": 30,
@@ -68,7 +68,7 @@
     "card6": {
         "id": "card6",
         "name": "Pidgey",
-        "type": "normal",
+        "type": "colorless",
         "hp": 40,
         "attack": 45,
         "defense": 40,
@@ -79,7 +79,7 @@
     "card7": {
         "id": "card7",
         "name": "Rattata",
-        "type": "normal",
+        "type": "colorless",
         "hp": 30,
         "attack": 56,
         "defense": 35,
@@ -90,7 +90,7 @@
     "card8": {
         "id": "card8",
         "name": "Spearow",
-        "type": "normal",
+        "type": "colorless",
         "hp": 40,
         "attack": 60,
         "defense": 30,
@@ -101,12 +101,67 @@
     "card9": {
         "id": "card9",
         "name": "Ekans",
-        "type": "poison",
+        "type": "psychic",
         "hp": 35,
         "attack": 60,
         "defense": 44,
         "price": 288,
         "description": "Moves silently and stealthily. Eats the eggs of birds, such as PIDGEY and SPEAROW, whole.",
         "image": "https:\/\/assets.pokemon.com\/assets\/cms2\/img\/pokedex\/full\/023.png"
+    },
+    "card10": {
+        "id": "card10",
+        "name": "Murkrow",
+        "type": "darkness",
+        "hp": 60,
+        "attack": 50,
+        "defense": 42,
+        "price": 288,
+        "description": "Feared and loathed by many, it is believed to bring misfortune to all those who see it at night. ",
+        "image": "https:\/\/assets.pokemon.com\/assets\/cms2\/img\/pokedex\/full\/198.png"
+    },
+    "card11": {
+        "id": "card11",
+        "name": "Kirlia",
+        "type": "fairy",
+        "hp": 80,
+        "attack": 20,
+        "defense": 20,
+        "price": 180,
+        "description": "It has a psychic power that enables it to distort the space around it and see into the future. ",
+        "image": "https:\/\/assets.pokemon.com\/assets\/cms2\/img\/pokedex\/full\/281.png"
+    },
+    "card12": {
+        "id": "card12",
+        "name": "Varoom",
+        "type": "metal",
+        "hp": 60,
+        "attack": 0,
+        "defense": 30,
+        "price": 200,
+        "description": " It is said that this Pok\u00e9mon was born when an unknown poison Pok\u00e9mon entered and inspirited an engine left at a scrap-processing factory. ",
+        "image": "https:\/\/assets.pokemon.com\/assets\/cms2\/img\/pokedex\/full\/965.png"
+    },
+    "card13": {
+        "id": "card13",
+        "name": "Black Kyurem",
+        "type": "dragon",
+        "hp": 130,
+        "attack": 100,
+        "defense": 0,
+        "price": 300,
+        "description": "This legendary ice Pok\u00e9mon waits for a hero to fill in the missing parts of its body with truth or ideals.",
+        "image": "https:\/\/assets.pokemon.com\/assets\/cms2\/img\/pokedex\/full\/646.png"
+    },
+    "card14": {
+        "id": "card14",
+        "name": "Hawlucha",
+        "type": "fighting",
+        "hp": 70,
+        "attack": 70,
+        "defense": 0,
+        "price": 200,
+        "description": "Its elegant finishing moves\u2014performed by nimbly leaping around using its wings\u2014are polished in the forest where it was born and raised.",
+        "image": "https:\/\/assets.pokemon.com\/assets\/cms2\/img\/pokedex\/full\/701.png"
     }
 }

@@ -78,6 +78,7 @@ function purchase($piece){
     <?php echo isset($_SESSION['username']) ? '<a href="logout.php">Logout</a>' : '<a href="sign-in.php">Sign in</a>' ?>
   </header>
   <div id="content">
+    <?php echo (isset($_SESSION['username']) && $_SESSION['username'] === 'admin') ? '<input type="button" value="Create new card" onclick="location.href=\'create-card.php\'">' : ''?>
     <div id="card-list">
       <?php
       $id = 0;

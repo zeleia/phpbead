@@ -22,7 +22,30 @@ $card = $cardStorage->findById('card' . $id);
 </head>
 
 <body>
-    <header>
+    <header <?php 
+    if($card['type'] === "electric"){
+        echo 'style="background-color: #f5f583;"';
+    } elseif($card['type'] === "water"){
+        echo 'style="background-color: #6188a1;"';
+    } elseif($card['type'] === "fire"){
+        echo 'style="background-color: #e96933;"';
+    } elseif($card['type'] === "grass"){
+        echo 'style="background-color: #87cf87;"';
+    } elseif($card['type'] === "colorless"){
+        echo 'style="background-color: #c5c5a1;"';
+    } elseif($card['type'] === "fighting"){
+        echo 'style="background-color: #db93db;"';
+    } elseif($card['type'] === "psychic"){
+        echo 'style="background-color: #c04f8b;"';
+    } elseif($card['type'] === "metal"){
+        echo 'style="background-color: #c5c5c5;"';
+    } elseif($card['type'] === "dragon"){
+        echo 'style="background-color: #844784;"';
+    } elseif($card['type'] === "darkness"){
+        echo 'style="background-color: #1f1f1f;"';
+    } elseif($card['type'] === "fairy"){
+        echo 'style="background-color: #7ce1e1;"';
+    }?>>
         <h1><a href="index.php">IKémon</a> >
             <?php echo $card['name'] ?>
         </h1>

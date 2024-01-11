@@ -6,38 +6,30 @@
     --clr-dark: #1d2530;
     --clr-white: #f0f0f0;
 
-    --poke-clr-normal: linear-gradient(#c5c5a1, #a4a484);
+    --poke-clr-colorless: linear-gradient(#c5c5a1, #a4a484);
     --poke-clr-fire: linear-gradient(#e96933, #d05e2e);
     --poke-clr-water: linear-gradient(#6188a1, #54778c);
     --poke-clr-electric: linear-gradient(#f5f583, #d7d773);
     --poke-clr-grass: linear-gradient(#87cf87, #76b376);
-    --poke-clr-ice: linear-gradient(#7ce1e1, #6ec9c9);
+    --poke-clr-fairy: linear-gradient(#7ce1e1, #6ec9c9);
     --poke-clr-fighting: linear-gradient(#db93db, #bf81bf);
-    --poke-clr-poison: linear-gradient(#844784, #6a396a);
-    --poke-clr-ground: linear-gradient(#776043, #5d4b35);
+    --poke-clr-dragon: linear-gradient(#844784, #6a396a);
     --poke-clr-psychic: linear-gradient(#c04f8b, #a74479);
-    --poke-clr-bug: linear-gradient(#c19748, #ab8540);
-    --poke-clr-rock: linear-gradient(#9e4646, #883c3c);
-    --poke-clr-ghost: linear-gradient(#57576d, #3e3e4e);
-    --poke-clr-dark: linear-gradient(#1f1f1f, #000000);
-    --poke-clr-steel: linear-gradient(#c5c5c5, #a2a2a2);
+    --poke-clr-darkness: linear-gradient(#1f1f1f, #000000);
+    --poke-clr-metal: linear-gradient(#c5c5c5, #a2a2a2);
 }
 
-.clr-normal { background-image: var(--poke-clr-normal); }
+.clr-colorless { background-image: var(--poke-clr-colorless); }
 .clr-fire { background-image: var(--poke-clr-fire); }
 .clr-water { background-image: var(--poke-clr-water); }
 .clr-electric { background-image: var(--poke-clr-electric); }
 .clr-grass { background-image: var(--poke-clr-grass); }
-.clr-ice { background-image: var(--poke-clr-ice); }
+.clr-fairy { background-image: var(--poke-clr-fairy); }
 .clr-fighting { background-image: var(--poke-clr-fighting); }
-.clr-poison { background-image: var(--poke-clr-poison); }
-.clr-ground { background-image: var(--poke-clr-ground); }
+.clr-dragon { background-image: var(--poke-clr-dragon); }
 .clr-psychic { background-image: var(--poke-clr-psychic); }
-.clr-bug { background-image: var(--poke-clr-bug); }
-.clr-rock { background-image: var(--poke-clr-rock); }
-.clr-ghost { background-image: var(--poke-clr-ghost); }
-.clr-dark { background-image: var(--poke-clr-dark); }
-.clr-steel { background-image: var(--poke-clr-steel); }
+.clr-darkness{ background-image: var(--poke-clr-darkness); }
+.clr-metal { background-image: var(--poke-clr-metal); }
 
 body {
     background-color: var(--clr-white);
