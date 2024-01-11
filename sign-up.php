@@ -49,7 +49,6 @@ if ($allSet) {
             'id' => $_POST['username'],
             'password' => $_POST['password'],
             'email' => $_POST['email'],
-            'admin' => false,
             'balance' => 1000000,
             'cards' => []
         ], $_POST['username']);
