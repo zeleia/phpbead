@@ -3,34 +3,14 @@
         "id": "admin",
         "password": "admin",
         "email": "admin@localhost.hu",
-        "balance": 1004101,
-        "cards": {
-            "2": "card9",
-            "3": "card8",
-            "6": "card1",
-            "8": "card5"
-        }
-    },
-    "zeleia": {
-        "id": "zeleia",
-        "password": "1234",
-        "email": "q9yhla@inf.elte.hu",
-        "balance": 999840,
+        "balance": 1000000,
         "cards": [
-            "card0"
-        ]
-    },
-    "pusz": {
-        "id": "pusz",
-        "password": "20011222",
-        "email": "pusz@gmail.com",
-        "balance": 996059,
-        "cards": [
-            "card6",
-            "card3",
-            "card7",
-            "card2",
-            "card4"
+            "card9",
+            "card8",
+            "card1",
+            "card5",
+            "card14",
+            "card15"
         ]
     }
 }

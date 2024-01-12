@@ -155,13 +155,24 @@
     },
     "card14": {
         "id": "card14",
-        "name": "Hawlucha",
-        "type": "fighting",
-        "hp": 70,
-        "attack": 70,
-        "defense": 0,
-        "price": 200,
-        "description": "Its elegant finishing moves\u2014performed by nimbly leaping around using its wings\u2014are polished in the forest where it was born and raised.",
-        "image": "https:\/\/assets.pokemon.com\/assets\/cms2\/img\/pokedex\/full\/701.png"
+        "name": "Paldean Wooper",
+        "type": "darkness",
+        "hp": "60",
+        "attack": "30",
+        "defense": "0",
+        "price": "150",
+        "description": "This Pok\u00e9mon lives in cold water. It will leave the water to search for food when it gets cold outside.",
+        "image": "https:\/\/assets.pokemon.com\/assets\/cms2\/img\/pokedex\/full\/194.png"
+    },
+    "card15": {
+        "id": "card15",
+        "name": "Miraidon",
+        "type": "electric",
+        "hp": "120",
+        "attack": "90",
+        "defense": "0",
+        "price": "250",
+        "description": "Much remains unknown about this creature. It resembles Cyclizar, but it is far more ruthless and powerful.",
+        "image": "https:\/\/assets.pokemon.com\/assets\/cms2\/img\/pokedex\/full\/1008.png"
     }
 }

@@ -70,10 +70,10 @@ if ($allSet) {
 
 <body>
     <header>
-        <h1><a href="index.php">IKémon</a> Sign up</h1>
+        <h1><a href="index.php">IKémon</a> > Sign up</h1>
     </header>
     <form action="" method="POST">
-        <span id="errors" style="color: red; display:<?php echo empty($errors) ? 'none' : 'block'?>">
+        <span style="color: red; display:<?php echo empty($errors) ? 'none' : 'block'?>">
             <?php
             if (!empty($errors)) {
                 foreach ($errors as $error) {

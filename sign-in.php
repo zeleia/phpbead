@@ -33,7 +33,7 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
 
 <body>
     <header>
-        <h1><a href="index.php">IKémon</a> Sign in</h1>
+        <h1><a href="index.php">IKémon</a> > Sign in</h1>
     </header>
         <form action="" method="POST">
             <span style="color: red; display: <?php echo $error ? 'block' : 'none' ?>">Invalid username or password!</span>

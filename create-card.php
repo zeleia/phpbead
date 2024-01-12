@@ -10,7 +10,7 @@ $errors = array();
 $allSet = false;
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $allSet = true;
-    if (!isset($_POST['card.name']) || empty($_POST['card-name'])) {
+    if (!isset($_POST['card-name']) || empty($_POST['card-name'])) {
         $errors[] = 'Card name is required!';
         $allSet = false;
     }
@@ -44,6 +44,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 
+if($allset){
+    if($_POST['hp'] <= 0){
+        $errors[] = 'HP must be greater than 0!';
+    }
+
+    if($_POST['attack'] < 0){
+        $errors[] = 'Attack must be positive!';
+    }
+
+    if($_POST['defense'] < 0){
+        $errors[] = 'Defense must be positive!';
+    }
+
+    if($_POST['price'] < 0){
+        $errors[] = 'Price must be positive!';
+    }
+}
+
 function length($array){
     $count = 0;
     foreach($array as $item){
@@ -52,9 +70,11 @@ function length($array){
     return $count;
   }
 
-if ($allSet) {
+if (empty($errors)) {
     include_once("cardstorage.php");
+    include_once("userstorage.php");
     $cardStorage = new CardStorage();
+    $userStorage = new UserStorage();
     $card = $cardStorage->findById($_POST['card-name']);
 
     if ($card) {
@@ -63,9 +83,9 @@ if ($allSet) {
 
     $cards = $cardStorage->findAll();
 
-    $id = 'card0';
+    $id;
     if(length($cards) !== 0){
-        $id = 'card' . (length($cards) - 1);
+        $id = 'card' . (length($cards));
     }
     
     if(empty($errors)){
@@ -79,7 +99,15 @@ if ($allSet) {
             'price' => $_POST['price'],
             'description'=> $_POST['description'],
             'image' => $_POST['image-url'],
-        ], $is);
+        ], $id);
+        $admin = $userStorage->findById('admin');
+        $userStorage->update('admin', [
+            'id'=> $admin['id'],
+            'password' => $admin['password'],
+            'email' => $admin['email'],
+            'balance' => $admin['balance'],
+            'cards' => array_merge($admin['cards'], [$id])
+        ]);
     }
 }
 ?>
@@ -97,9 +125,18 @@ if ($allSet) {
 
 <body>
     <header>
-        <h1><a href="index.php">IKémon</a> Sign in</h1>
+        <h1><a href="index.php">IKémon</a> > Card workshop</h1>
     </header>
         <form action="" method="POST">
+        <span style="color: red; display:<?php echo empty($errors) ? 'none' : 'block'?>">
+            <?php
+            if (!empty($errors)) {
+                foreach ($errors as $error) {
+                    echo $error . '<br>';
+                }
+            }
+            ?>
+        </span>
             <label for="card-name">Card name:</label>
             <input type="text" id="card-name" name="card-name" placeholder="Card name"><br>
             <label for="type">Type:</label>
