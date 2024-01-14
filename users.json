@@ -3,23 +3,31 @@
         "id": "admin",
         "password": "admin",
         "email": "admin@localhost.hu",
-        "balance": 1000534,
-        "cards": [
-            "card9",
-            "card8",
-            "card5",
-            "card14",
-            "card15",
-            "card16"
-        ]
+        "balance": 1000497.7000000001,
+        "cards": {
+            "1": "card3",
+            "2": "card4",
+            "3": "card5",
+            "4": "card6",
+            "5": "card7",
+            "6": "card8",
+            "7": "card9",
+            "8": "card10",
+            "9": "card11",
+            "10": "card12",
+            "11": "card13",
+            "12": "card14",
+            "13": "card15",
+            "14": "card1"
+        }
     },
     "zeleia": {
         "id": "zeleia",
         "password": "1234",
-        "email": "zeleiadam25@gmail.com",
-        "balance": 999466,
+        "email": "zelei@gmail.com",
+        "balance": 999628.6,
         "cards": [
-            "card1"
+            "card2"
         ]
     }
 }

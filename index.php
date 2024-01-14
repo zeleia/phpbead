@@ -73,13 +73,24 @@ function purchase($piece){
 
 <body>
   <header>
-    <?php echo isset($_SESSION['username']) ? '<span>Logged in as ' . $_SESSION['username'] . '</span>' : '<span>You are logged out!</span>' ?>
+    <?php
+      if(isset($_SESSION['username'])){
+        if($_SESSION['username'] !== 'admin'){
+          echo '<span>You are loggedin as <a href="user-details.php?user='.$_SESSION['username'].'">'.$_SESSION['username'].'</a>!</span><br>';
+        }else{
+          echo '<span>You are logged in as admin!</span><br>';
+        }
+      } else {
+        echo '<span>You are not logged in!</span><br>';
+      }
+    ?>
+    <?php echo isset($_SESSION['username']) ? '<span>Your balance: ' . $userStorage->findById($_SESSION['username'])['balance'] . ' coin.</span>' : '' ?>
     <h1><a href="index.php">IKémon</a> > Home</h1> 
     <?php echo isset($_SESSION['username']) ? '<a href="logout.php">Logout</a>' : '<a href="sign-in.php">Sign in</a>' ?>
   </header>
-  <div id="content">
+  <div class="content">
     <?php echo (isset($_SESSION['username']) && $_SESSION['username'] === 'admin') ? '<input type="button" value="Create new card" onclick="location.href=\'create-card.php\'">' : ''?>
-    <div id="card-list">
+    <div class="card-list">
       <?php
       $id = 0;
       foreach ($cards as $card) {
@@ -88,7 +99,7 @@ function purchase($piece){
         echo '<img src="' . $card['image'] . '" alt="">';
         echo '</div>';
         echo '<div class="details">';
-        echo '<h2><a href="details.php?id=' . $id . '">' . $card['name'] . '</a></h2>';
+        echo '<h2><a href="card-details.php?id=' . $id . '">' . $card['name'] . '</a></h2>';
         echo '<span class="card-type"><span class="icon">🏷</span> ' . $card['type'] . '</span>';
         echo '<span class="attributes">';
         echo '<span class="card-hp"><span class="icon">❤</span> ' . $card['hp'] . '</span>';

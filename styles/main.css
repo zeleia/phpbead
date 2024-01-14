@@ -41,7 +41,7 @@ body {
     padding: 0;
 }
 
-#content {
+.content {
     margin: 0 auto;
     max-width: 90%;
     min-height: 80vh;
