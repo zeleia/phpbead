@@ -75,17 +75,18 @@ if (empty($errors)) {
     include_once("userstorage.php");
     $cardStorage = new CardStorage();
     $userStorage = new UserStorage();
-    $card = $cardStorage->findById($_POST['card-name']);
-
-    if ($card) {
-        $errors[] = 'Card already exists!';
-    }
 
     $cards = $cardStorage->findAll();
 
     $id;
     if(length($cards) !== 0){
         $id = 'card' . (length($cards));
+    }
+
+    $card = $cardStorage->findById($id);
+
+    if ($card) {
+        $errors[] = 'Card already exists!';
     }
     
     if(empty($errors)){

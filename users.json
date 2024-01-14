@@ -3,14 +3,23 @@
         "id": "admin",
         "password": "admin",
         "email": "admin@localhost.hu",
-        "balance": 1000000,
+        "balance": 1000534,
         "cards": [
             "card9",
             "card8",
-            "card1",
             "card5",
             "card14",
-            "card15"
+            "card15",
+            "card16"
+        ]
+    },
+    "zeleia": {
+        "id": "zeleia",
+        "password": "1234",
+        "email": "zeleiadam25@gmail.com",
+        "balance": 999466,
+        "cards": [
+            "card1"
         ]
     }
 }
